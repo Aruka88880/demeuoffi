@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>Психологическая поддержка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/logo2.png"> </a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="sovety.html">СОВЕТЫ</a></li>
+                <li><a href="volonter.html">ДЛЯ ВОЛОНТЕРОВ</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+     </nav>
+    
+<div class="text-box">
+    <h1>Мы рядом</h1>
+    <p>Это поддерживающая онлайн-платформа, предназначенная для предоставления помощи и рекомендаций <br>ученикам, сталкивающимся с различными проблемами.</p>
+    <div class="telega">
+         <i class="fa-brands fa-telegram"></i>
+               <li> 
+                   <a href="https://t.me/demeusupport_bot">
+                    <h1>Telegram</h1> 
+                    </a>
+                </li>
+      
+            </div>
+</div>
+</section>
+<!----Issues-->
+<section class="issues">
+    <h2>Возможные трудности</h2>
+    <p2>На жизненном пути вы можете встретиться с различными проблемами, нужно понимать, что говорить о своем самочувствии - нормально.</p2>
+    <div class="row">
+        <div class="issues-col">
+            <h3>Отношения с родителями</h3>
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="issues-col">
+            <h3>Усталость</h3>
+            <i class="fa-solid fa-battery-quarter"></i>
+        </div>
+        <div class="issues-col">
+            <h3>Сомнения</h3>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+    </div> 
+</section>
+<section class="faclities">
+    <h2>У нас безопасно</h2>
+    <p2>Мы делаем все для того, чтобы обеспечить максимальный комфорт и удобство</p2>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/safety2.jpg">
+            <h3>Анонимность</h3>
+            <p>Возможность сохранить анонимность и обратиться за помощью к нашим волонтёрам и психологу в том числе.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/harmony.jpg">
+            <h3>Гармония</h3>
+            <p>Наша платформа позволит вам понять причину проблемы и также её возможные решения. Понимание своих эмоций и чувств.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/friends.jpg">
+            <h3>Единомышленники</h3>
+            <p>Благодаря коммуникации вы можете найти друзей. Сила в единстве и объединении.</p>
+        </div>
+    </div>
+</section>
+<!---testimonials--->
+<section class="testimonials">
+    <h2>Отзывы</h2>
+    <p2>Вы так же можете оставить отзыв или задать интересующий вас вопрос.</p2>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/user2.jpg">
+            <div>
+                <p3>Возможность анонимного общения с психологами устранила барьеры, которые я чувствовал в традиционной терапии.</p3>
+                <h5>Aruzhan</h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+         <div class="testimonials-col">
+            <img src="images/user3.jpg">
+            <div>
+                <p3>Понимающая команда создает безопасное пространство для самовыражения, предлагая ценные ресурсы и рекомендации.</p3>
+                <h5>Lifeisgood</h5>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta">
+    <h1>
+Ваши чувства важны<br>
+Вы важны</h1>
+</section>
+<section class="footer">
+    <h4>О нас</h4>
+    <p2>Платформа защищена авторскими правами,<br>сделана на языке html и направлена исключительно на благо учащихся.</p2>
+</section>
+    
+    
+    
+    
+    
+    
+    
+<!--JavaScript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+</body>
+</html>
